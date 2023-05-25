@@ -49,7 +49,7 @@ while (!anda)
 
 
 
-Console.WriteLine("Ingrese la primera cadena:");
+/*Console.WriteLine("Ingrese la primera cadena:");
 string cadena1 = Console.ReadLine();
 int longitud = cadena1.Length;
 Console.WriteLine("La longitud de la primer cadena es: " + longitud);
@@ -90,7 +90,7 @@ string cadenaMayusculas = cadena1.ToUpper();
 string cadenaMinusculas = cadena1.ToLower();
 
 Console.WriteLine("Cadena 1 en mayúsculas: " + cadenaMayusculas);
-Console.WriteLine("Cadena 1 en minúsculas: " + cadenaMinusculas);
+Console.WriteLine("Cadena 1 en minúsculas: " + cadenaMinusculas);*/
 
 string cadena3 = "Hola, Mundo, Perro, Chau";
 char delimitador = ','; // Utilizamos una coma como delimitador
@@ -102,3 +102,13 @@ foreach (string subcadena in subcadenas)
     Console.WriteLine(subcadena);
 }
 
+int numer,numer2;
+
+Console.WriteLine("Ingrese una ecuación simple:");
+string ecuacion = Console.ReadLine();
+
+string[] operandos = ecuacion.Split("+");
+bool funci = int.TryParse(operandos[0],out numer);
+bool funci2 = int.TryParse(operandos[1],out numer2);
+int suma = numer + numer2;
+Console.WriteLine("La suma es: " + suma);
